@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://jtalics-dev.appspot.com/">
+    <information>
+        <title>Pairs Trader</title>
+        <vendor>JTalics LLC & Associates</vendor>
+        <icon href="arrows.png"/>
+        <offline-allowed/>
+    </information>
+
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"
+        java-vm-args="-Djava.net.preferIPv4Stack=true"/>
+        <jar href="pairstrader.jar" main="true" />
+    </resources>
+	<security>
+		<all-permissions/>
+	</security>
+    <application-desc
+         name="THOR / Pairs tool"
+         main-class="com.jtalics.pairstrader.Main"
+         width="1000"
+         height="1000">
+     </application-desc>
+     <update check="background"/>
+</jnlp>

@@ -1,0 +1,77 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="Showcase.css">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>Pairs Trader</title>
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="showcase/showcase.nocache.js"></script>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body>
+
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+    
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+    <h1>Pairs Trader - VERSION 0.04f</h1>
+
+
+	<h2><a href=pairstrader.jnlp>CLICK HERE to launch Pairs Trader (via Web Start / JNLP)</a></h2>
+
+CHICAGO, IL: JTalics LLC releases Pairs Trader(TM), which is a software tool that manages pairs for 
+the retail pairs trader using the Interactive Brokers environment.
+
+If you are not familiar with pairs trading here is a good introduction link listed below.  Pairs trading is becoming very popular for today's retail investor.
+However, pair trading may be tedious and error-prone for some.  Unlike options spreads, no stock exchange can *guarantee* that a combination of stocks will be transacted as a unit in an all-or-none fashion.  
+Thus a trader can't tell a stock exchange to "buy this pair"; instead the trader must buy or sell each leg of the pair separately.  While this is easy for one single pair, it gets very difficult when you are buying and selling hundreds of pairs a day.  
+That's where Pairs Trader(TM) comes in.  It keeps track of pairs of stocks so that execution is a simple point and click.
+
+<h3>What's new in version 0.04 ALPHA?</h3>
+
+<ul>
+<li>Preferences are persisted.</li>Some "ergonomic" settings can be saved.  (Import/Export of user date will be implemented in a future version.) 
+<li>Server simulation.</li> Instead of connecting to TWS, you can connect to a simulated server.  Any symbol that you type in will cause a Book to be created for it and a "Brownian motion" priced order placer will be started.
+<li>Auto-close</li>A position is automatically closed when a stop is exceeded.
+</ul>
+
+<h3>Useful links</h3>
+<ul>
+	<li><a href='https://www.fidelity.com/learning-center/trading-investing/trading/pairs-trading'>What is Pairs Trading?</a></li>
+	<li><a href='pairstrader.jar'>Standalone Pairs Trader (expires in one month)</a></li>
+	<li><a href ='http://www.java.com/en/download/help/javaconsole.xml'>Starting the Java Console will allow you to see error (good for testing)</a></li>
+</ul>
+<br>
+	<img alt='Pairs Trader' src="pairstrader_screenshot.png">
+  </body>
+</html>
